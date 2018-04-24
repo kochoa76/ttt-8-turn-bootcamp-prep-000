@@ -18,7 +18,8 @@ end
 
 def position_taken?(board, index)
   board[index] == " "
-  true  
+ false 
+ 
 end
 
 def move(board, input_to_index, name = "X")
