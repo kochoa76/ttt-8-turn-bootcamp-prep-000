@@ -5,11 +5,10 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-def user_input(int)
   
-
 def input_to_index(user_input)
-  user_input.toi
+  user_input.to_i - 1 
+end
 
 def valid_move?(board, index)
   if index.between?(0, 8) && position_taken?
@@ -20,4 +19,8 @@ end
 def position_taken?(board, index)
   board[index] == ""
   false 
+end
+
+def move(board, input_to_index, name = "X")
+  board[index] = name
 end
