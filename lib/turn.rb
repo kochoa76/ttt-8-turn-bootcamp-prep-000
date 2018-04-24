@@ -30,7 +30,7 @@ def turn(board)
   index = input_to_index(input)
   if index.valid_move?(board, index)
     move(board, input_to_index, name)
-    turn(board)
+    
 end
 
 
